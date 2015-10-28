@@ -1,9 +1,4 @@
-// require('./second.js');
-// document.wirte('Webpack for the win!');
-
 'use strict';
-
-// var component = require('./component.js');
-// document.body.appendChild(component());
-
-console.log('Hot update YO1!');
+var nums = [1, 5, 10, 20];
+var result = nums.map(v => v + 1);
+console.log(result);

@@ -23,6 +23,11 @@ var config = {
 		loaders: [{
 			test: /\.scss$/,
 			loader: ExtractTextPlugin.extract('style', 'css!sass')
+		},
+		{
+			test: /\.js$/,
+			exclude: /node_modules/,
+			loader: 'babel'
 		}]
 	},
 	plugins: [
