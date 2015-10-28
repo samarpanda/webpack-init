@@ -1,6 +1,6 @@
 ## Simple Webpack Setup
 
-Webpack init demo project. A little [webpack][1] setup. Includes exporting of html, scss & js.
+Webpack init demo project. A little [webpack][1] setup for module bundler. Includes exporting of html, scss & js.
 
 
 ## Usage
