@@ -1,0 +1,25 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/layout';
+
+body{
+	font: {
+		size: 100%;
+		family: $primary-font;
+	}
+	// color: green;
+	// background-color: blue;
+}
+
+header{
+
+	h1{
+		@include font-size(20px);
+	}
+
+	@include MQ(M){
+		h1{
+			@include font-size(26px);
+		}
+	}
+}
