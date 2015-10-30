@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 function dirPath(dest){
 	return path.resolve(__dirname, dest);
@@ -10,7 +10,7 @@ function webPath(dest){
 	return dirPath('app/' + dest);
 };
 
-var config = {
+const config = {
 	entry: [
 		webPath('scss/style.scss'),
 		webPath('js/main.js')
