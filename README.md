@@ -17,5 +17,8 @@ npm run dev
 npm run deploy
 ```
 
+For `npm run dev` open browser with [http://localhost:8080][2]
+
 
 [1]: https://webpack.github.io/
+[2]: http://localhost:8080

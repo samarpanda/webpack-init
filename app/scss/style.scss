@@ -1,6 +1,16 @@
+
 @import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/layout';
+@import 'partials/_placeholder';
+
+*, *::after, *::before {
+	@include box-sizing(border-box);
+}
+
+// *::after, *::before{
+// 	content: '';
+// }
 
 body{
 	font: {
@@ -21,5 +31,55 @@ header{
 		h1{
 			@include font-size(26px);
 		}
+	}
+}
+
+.cp-tabs{
+	position: relative;
+	width: 90%;
+	max-width: $L;
+	margin: 2em auto;
+	@extend %clearfix;
+
+}
+
+.cp-nav{
+	width: $tabs-btn-width-S * $tabs-btn-number;
+	@extend %clearfix;
+	li{
+		float: left;
+		list-style: none;
+	}
+
+	a {
+		position: relative;
+		display: block;
+		height: $tabs-btn-height-S;
+		width: $tabs-btn-width-S
+	}
+
+	@include MQ(M){
+		width: $tabs-btn-width-M;
+	}
+
+	@include MQ(L){
+		width: $tabs-btn-width-L;
+	}
+}
+
+.cp-cont {
+	li{
+		display: none;
+		// padding: 1.4em;
+
+		&.selected {
+			display: block;
+		}
+	}
+
+	@include MQ(M) {
+	}
+
+	@include MQ(L) {
 	}
 }
