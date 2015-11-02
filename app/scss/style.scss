@@ -44,7 +44,8 @@ header{
 }
 
 .cp-nav{
-	width: $tabs-btn-width-S * $tabs-btn-number;
+	//width: $tabs-btn-width-S * $tabs-btn-number;
+	width: auto;
 	@extend %clearfix;
 	li{
 		float: left;
@@ -60,10 +61,12 @@ header{
 
 	@include MQ(M){
 		width: $tabs-btn-width-M;
+		float: left;
 	}
 
 	@include MQ(L){
 		width: $tabs-btn-width-L;
+		float: left;
 	}
 }
 
@@ -78,6 +81,10 @@ header{
 	}
 
 	@include MQ(M) {
+		min-height: $tabs-btn-height-M * $tabs-btn-number;
+		li{
+			padding: 2em 2em 2em 7em;
+		}
 	}
 
 	@include MQ(L) {
